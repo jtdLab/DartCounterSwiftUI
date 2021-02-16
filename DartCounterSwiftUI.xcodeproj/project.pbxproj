@@ -1,0 +1,1127 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C1BEB5BE9765381DB96242 /* Pods_DartCounterSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE399DD67C5BE2C9F511D1 /* Pods_DartCounterSwiftUI.framework */; };
+		A715461563AF6BFCEC022B4E /* Pods_DartCounterSwiftUI_DartCounterSwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0238D3C38E4172230AFF48A /* Pods_DartCounterSwiftUI_DartCounterSwiftUIUITests.framework */; };
+		D5B475C9F4CE28A7909F72FA /* Pods_DartCounterSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF6DB626520B8D349B71CEA /* Pods_DartCounterSwiftUITests.framework */; };
+		DD0837AB25C8AB4E00903EA6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0837AA25C8AB4E00903EA6 /* Language.swift */; };
+		DD189AA125CC716C0057DE39 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD189AA025CC716C0057DE39 /* AppState.swift */; };
+		DD1D68DC25C0DDC0001A4197 /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68DB25C0DDC0001A4197 /* CreateGameView.swift */; };
+		DD1D68DF25C0DE27001A4197 /* InGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68DE25C0DE27001A4197 /* InGameView.swift */; };
+		DD1D68E225C0DE50001A4197 /* CheckoutDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68E125C0DE50001A4197 /* CheckoutDetailsView.swift */; };
+		DD1D68E525C0DE61001A4197 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68E425C0DE61001A4197 /* StatsView.swift */; };
+		DD1D68E825C0DE77001A4197 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68E725C0DE77001A4197 /* ProfileView.swift */; };
+		DD1D68EB25C0DEAA001A4197 /* InvitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68EA25C0DEAA001A4197 /* InvitesView.swift */; };
+		DD1D68EE25C0DEC5001A4197 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68ED25C0DEC5001A4197 /* FriendsView.swift */; };
+		DD1D68F125C0DEDB001A4197 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68F025C0DEDB001A4197 /* SettingsView.swift */; };
+		DD1D68F425C0DEEF001A4197 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68F325C0DEEF001A4197 /* AboutUsView.swift */; };
+		DD1D68F725C0DF05001A4197 /* SocialMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68F625C0DF05001A4197 /* SocialMediaView.swift */; };
+		DD1D68FA25C0DF41001A4197 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D68F925C0DF41001A4197 /* KeyBoard.swift */; };
+		DD26F02925C168C600E830DF /* AppActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26F02825C168C600E830DF /* AppActionButton.swift */; };
+		DD26F02C25C16B4C00E830DF /* OnePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26F02B25C16B4C00E830DF /* OnePlayer.swift */; };
+		DD26F02F25C1721900E830DF /* KeyBoardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26F02E25C1721900E830DF /* KeyBoardButton.swift */; };
+		DD26F03325C1772300E830DF /* TwoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26F03225C1772300E830DF /* TwoPlayer.swift */; };
+		DD26F03625C1772800E830DF /* ThreePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26F03525C1772800E830DF /* ThreePlayer.swift */; };
+		DD26F03925C1772E00E830DF /* FourPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26F03825C1772E00E830DF /* FourPlayer.swift */; };
+		DD29533425D7268A0041C6F9 /* XCTestCase+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533325D7268A0041C6F9 /* XCTestCase+Firebase.swift */; };
+		DD3C835A25C18CB300845DEA /* IngameActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C835925C18CB300845DEA /* IngameActionButton.swift */; };
+		DD3F290D25CB2FEC0004334E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F290C25CB2FEC0004334E /* User.swift */; };
+		DD3F291025CB3FBC0004334E /* CareerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F290F25CB3FBC0004334E /* CareerStats.swift */; };
+		DD3F291325CB405D0004334E /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F291225CB405D0004334E /* Invitation.swift */; };
+		DD43C0F025D1E30300AC0A7B /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43C0EF25D1E30300AC0A7B /* Encodable+Extension.swift */; };
+		DD4EA6A225BF2D9300A44D72 /* Last10GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EA6A125BF2D9300A44D72 /* Last10GamesView.swift */; };
+		DD4EA6AB25BF442900A44D72 /* Last10GamesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EA6AA25BF442900A44D72 /* Last10GamesCard.swift */; };
+		DD50240425CDCFC20037A452 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50240325CDCFC20037A452 /* Settings.swift */; };
+		DD50240725CDCFC90037A452 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50240625CDCFC90037A452 /* Game.swift */; };
+		DD50241025CDD5CA0037A452 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50240F25CDD5CA0037A452 /* LoadingView.swift */; };
+		DD50241325CDD5FF0037A452 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50241225CDD5FF0037A452 /* LottieView.swift */; };
+		DD574E3925CA0FD6004A85AF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD574E3825CA0FD6004A85AF /* SignInViewModel.swift */; };
+		DD574E3C25CA0FE2004A85AF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD574E3B25CA0FE2004A85AF /* SignUpViewModel.swift */; };
+		DD64A78525BDF9FF00FAFC28 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64A78425BDF9FF00FAFC28 /* SignInView.swift */; };
+		DD64A78825BDFA3E00FAFC28 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64A78725BDFA3E00FAFC28 /* SignUpView.swift */; };
+		DD68BCF125C8927200EFC801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD68BCF025C8927200EFC801 /* LaunchScreen.storyboard */; };
+		DD858F1625CF2670001D9776 /* FireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD858F1525CF2670001D9776 /* FireStore.swift */; };
+		DD858F1B25CF28A3001D9776 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD858F1A25CF28A3001D9776 /* ProfileViewModel.swift */; };
+		DD89454525C197D900E13AC8 /* CheckoutDetailsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89454425C197D900E13AC8 /* CheckoutDetailsButton.swift */; };
+		DD8B9C6C25C9DC77005D2B29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9C6B25C9DC77005D2B29 /* GoogleService-Info.plist */; };
+		DDAB77CB25C1E231003B73AA /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB77CA25C1E231003B73AA /* ProfileCard.swift */; };
+		DDAF474A25BF25A100E25831 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF474925BF25A100E25831 /* View+Extension.swift */; };
+		DDB98AB125BDFE3900D9EF1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB98AB025BDFE3900D9EF1C /* HomeView.swift */; };
+		DDB98AB825BDFEE200D9EF1C /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB98AB725BDFEE200D9EF1C /* AppCard.swift */; };
+		DDBA505525CDDDAE0050BC55 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = DDBA505425CDDDAE0050BC55 /* loading.json */; };
+		DDD844FB25CF2E48002F01F3 /* DartCounterSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD844FA25CF2E48002F01F3 /* DartCounterSwiftUITests.swift */; };
+		DDD8450B25CF2F2E002F01F3 /* DartCounterSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8450A25CF2F2E002F01F3 /* DartCounterSwiftUIUITests.swift */; };
+		DDD8451625CF31A5002F01F3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8451525CF31A5002F01F3 /* HomeViewModel.swift */; };
+		DDD8451B25CF31D8002F01F3 /* CreateGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8451A25CF31D8002F01F3 /* CreateGameViewModel.swift */; };
+		DDD8452025CF31F5002F01F3 /* InGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8451F25CF31F5002F01F3 /* InGameViewModel.swift */; };
+		DDD8452525CF320D002F01F3 /* CheckoutDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8452425CF320D002F01F3 /* CheckoutDetailsViewModel.swift */; };
+		DDD8452A25CF3220002F01F3 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8452925CF3220002F01F3 /* StatsViewModel.swift */; };
+		DDD8452F25CF3241002F01F3 /* Last10GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8452E25CF3241002F01F3 /* Last10GameViewModel.swift */; };
+		DDD8453725CF3253002F01F3 /* InvitesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8453625CF3253002F01F3 /* InvitesViewModel.swift */; };
+		DDD8453C25CF3266002F01F3 /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8453B25CF3266002F01F3 /* FriendsViewModel.swift */; };
+		DDD8454125CF327A002F01F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8454025CF327A002F01F3 /* SettingsViewModel.swift */; };
+		DDD8454625CF328D002F01F3 /* AboutUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8454525CF328D002F01F3 /* AboutUsViewModel.swift */; };
+		DDD8454B25CF32A8002F01F3 /* SocialMediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8454A25CF32A8002F01F3 /* SocialMediaViewModel.swift */; };
+		DDD8455025CF32D6002F01F3 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8454F25CF32D6002F01F3 /* LoadingViewModel.swift */; };
+		DDD8455825CF3A1D002F01F3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8455725CF3A1D002F01F3 /* Profile.swift */; };
+		DDD8456325CF4718002F01F3 /* FireStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8456225CF4718002F01F3 /* FireStoreTest.swift */; };
+		DDE002E425BF4AD700F21FD7 /* GameSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE002E325BF4AD700F21FD7 /* GameSnapshot.swift */; };
+		DDE002E825BF507400F21FD7 /* CareerStatsSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE002E725BF507400F21FD7 /* CareerStatsSnapshot.swift */; };
+		DDE002EB25BF56BC00F21FD7 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE002EA25BF56BC00F21FD7 /* HomeButton.swift */; };
+		DDE01D8D25CAC4EA00AEC424 /* AppSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE01D8C25CAC4EA00AEC424 /* AppSecureField.swift */; };
+		DDE3083725D1A16100195F54 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3083625D1A16100195F54 /* TestData.swift */; };
+		DDF4E6A425BDD8F000B6D0B4 /* DartCounterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4E6A325BDD8F000B6D0B4 /* DartCounterSwiftUIApp.swift */; };
+		DDF4E6A825BDD8F200B6D0B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF4E6A725BDD8F200B6D0B4 /* Assets.xcassets */; };
+		DDF4E6AB25BDD8F200B6D0B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF4E6AA25BDD8F200B6D0B4 /* Preview Assets.xcassets */; };
+		DDF4E6B425BDE14E00B6D0B4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4E6B325BDE14E00B6D0B4 /* Color+Extension.swift */; };
+		DDF4E6C825BDE5B900B6D0B4 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4E6C725BDE5B900B6D0B4 /* AppTextField.swift */; };
+		DDF4E6CB25BDE6B300B6D0B4 /* AppPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4E6CA25BDE6B300B6D0B4 /* AppPrimaryButton.swift */; };
+		DDF4E6CE25BDE6F900B6D0B4 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4E6CD25BDE6F900B6D0B4 /* SocialMediaButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD844FD25CF2E48002F01F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF4E69825BDD8F000B6D0B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF4E69F25BDD8F000B6D0B4;
+			remoteInfo = DartCounterSwiftUI;
+		};
+		DDD8450D25CF2F2E002F01F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF4E69825BDD8F000B6D0B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF4E69F25BDD8F000B6D0B4;
+			remoteInfo = DartCounterSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57B9B227789FCD4181D9ABA3 /* Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BF6DB626520B8D349B71CEA /* Pods_DartCounterSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartCounterSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B16313F117BF025A7C60B5 /* Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		75414BE513A0A10DEFDBB728 /* Pods-DartCounterSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartCounterSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-DartCounterSwiftUI/Pods-DartCounterSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		801437044060BB87AB2E37E4 /* Pods-DartCounterSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartCounterSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-DartCounterSwiftUITests/Pods-DartCounterSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0238D3C38E4172230AFF48A /* Pods_DartCounterSwiftUI_DartCounterSwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartCounterSwiftUI_DartCounterSwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB70702835E09AB5591B11DE /* Pods-DartCounterSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartCounterSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-DartCounterSwiftUITests/Pods-DartCounterSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD0837AA25C8AB4E00903EA6 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		DD189AA025CC716C0057DE39 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DD1D68DB25C0DDC0001A4197 /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
+		DD1D68DE25C0DE27001A4197 /* InGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameView.swift; sourceTree = "<group>"; };
+		DD1D68E125C0DE50001A4197 /* CheckoutDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutDetailsView.swift; sourceTree = "<group>"; };
+		DD1D68E425C0DE61001A4197 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		DD1D68E725C0DE77001A4197 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DD1D68EA25C0DEAA001A4197 /* InvitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitesView.swift; sourceTree = "<group>"; };
+		DD1D68ED25C0DEC5001A4197 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		DD1D68F025C0DEDB001A4197 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DD1D68F325C0DEEF001A4197 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		DD1D68F625C0DF05001A4197 /* SocialMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaView.swift; sourceTree = "<group>"; };
+		DD1D68F925C0DF41001A4197 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
+		DD26F02825C168C600E830DF /* AppActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActionButton.swift; sourceTree = "<group>"; };
+		DD26F02B25C16B4C00E830DF /* OnePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePlayer.swift; sourceTree = "<group>"; };
+		DD26F02E25C1721900E830DF /* KeyBoardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardButton.swift; sourceTree = "<group>"; };
+		DD26F03225C1772300E830DF /* TwoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayer.swift; sourceTree = "<group>"; };
+		DD26F03525C1772800E830DF /* ThreePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePlayer.swift; sourceTree = "<group>"; };
+		DD26F03825C1772E00E830DF /* FourPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourPlayer.swift; sourceTree = "<group>"; };
+		DD29533325D7268A0041C6F9 /* XCTestCase+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Firebase.swift"; sourceTree = "<group>"; };
+		DD3C835925C18CB300845DEA /* IngameActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngameActionButton.swift; sourceTree = "<group>"; };
+		DD3F290C25CB2FEC0004334E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD3F290F25CB3FBC0004334E /* CareerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerStats.swift; sourceTree = "<group>"; };
+		DD3F291225CB405D0004334E /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		DD43C0EF25D1E30300AC0A7B /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		DD4EA6A125BF2D9300A44D72 /* Last10GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last10GamesView.swift; sourceTree = "<group>"; };
+		DD4EA6AA25BF442900A44D72 /* Last10GamesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last10GamesCard.swift; sourceTree = "<group>"; };
+		DD50240325CDCFC20037A452 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DD50240625CDCFC90037A452 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DD50240F25CDD5CA0037A452 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DD50241225CDD5FF0037A452 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		DD574E3825CA0FD6004A85AF /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		DD574E3B25CA0FE2004A85AF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		DD64A78425BDF9FF00FAFC28 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		DD64A78725BDFA3E00FAFC28 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DD68BCF025C8927200EFC801 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD858F1525CF2670001D9776 /* FireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStore.swift; sourceTree = "<group>"; };
+		DD858F1A25CF28A3001D9776 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DD89454425C197D900E13AC8 /* CheckoutDetailsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutDetailsButton.swift; sourceTree = "<group>"; };
+		DD8B9C6B25C9DC77005D2B29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDAB77CA25C1E231003B73AA /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
+		DDAF474925BF25A100E25831 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		DDB98AB025BDFE3900D9EF1C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DDB98AB725BDFEE200D9EF1C /* AppCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
+		DDBA505425CDDDAE0050BC55 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		DDD844F825CF2E48002F01F3 /* DartCounterSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartCounterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD844FA25CF2E48002F01F3 /* DartCounterSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartCounterSwiftUITests.swift; sourceTree = "<group>"; };
+		DDD844FC25CF2E48002F01F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD8450825CF2F2E002F01F3 /* DartCounterSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartCounterSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD8450A25CF2F2E002F01F3 /* DartCounterSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartCounterSwiftUIUITests.swift; sourceTree = "<group>"; };
+		DDD8450C25CF2F2E002F01F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD8451525CF31A5002F01F3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DDD8451A25CF31D8002F01F3 /* CreateGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewModel.swift; sourceTree = "<group>"; };
+		DDD8451F25CF31F5002F01F3 /* InGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameViewModel.swift; sourceTree = "<group>"; };
+		DDD8452425CF320D002F01F3 /* CheckoutDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutDetailsViewModel.swift; sourceTree = "<group>"; };
+		DDD8452925CF3220002F01F3 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		DDD8452E25CF3241002F01F3 /* Last10GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last10GameViewModel.swift; sourceTree = "<group>"; };
+		DDD8453625CF3253002F01F3 /* InvitesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitesViewModel.swift; sourceTree = "<group>"; };
+		DDD8453B25CF3266002F01F3 /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		DDD8454025CF327A002F01F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		DDD8454525CF328D002F01F3 /* AboutUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewModel.swift; sourceTree = "<group>"; };
+		DDD8454A25CF32A8002F01F3 /* SocialMediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaViewModel.swift; sourceTree = "<group>"; };
+		DDD8454F25CF32D6002F01F3 /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
+		DDD8455725CF3A1D002F01F3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DDD8456225CF4718002F01F3 /* FireStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreTest.swift; sourceTree = "<group>"; };
+		DDE002E325BF4AD700F21FD7 /* GameSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSnapshot.swift; sourceTree = "<group>"; };
+		DDE002E725BF507400F21FD7 /* CareerStatsSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerStatsSnapshot.swift; sourceTree = "<group>"; };
+		DDE002EA25BF56BC00F21FD7 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		DDE01D8C25CAC4EA00AEC424 /* AppSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecureField.swift; sourceTree = "<group>"; };
+		DDE3083625D1A16100195F54 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		DDF4E6A025BDD8F000B6D0B4 /* DartCounterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DartCounterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF4E6A325BDD8F000B6D0B4 /* DartCounterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartCounterSwiftUIApp.swift; sourceTree = "<group>"; };
+		DDF4E6A725BDD8F200B6D0B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDF4E6AA25BDD8F200B6D0B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDF4E6AC25BDD8F200B6D0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF4E6B325BDE14E00B6D0B4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		DDF4E6C725BDE5B900B6D0B4 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		DDF4E6CA25BDE6B300B6D0B4 /* AppPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrimaryButton.swift; sourceTree = "<group>"; };
+		DDF4E6CD25BDE6F900B6D0B4 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
+		E1BE399DD67C5BE2C9F511D1 /* Pods_DartCounterSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartCounterSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F303D2F61552D06171BF8833 /* Pods-DartCounterSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartCounterSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-DartCounterSwiftUI/Pods-DartCounterSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD844F525CF2E48002F01F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B475C9F4CE28A7909F72FA /* Pods_DartCounterSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD8450525CF2F2E002F01F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A715461563AF6BFCEC022B4E /* Pods_DartCounterSwiftUI_DartCounterSwiftUIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF4E69D25BDD8F000B6D0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C1BEB5BE9765381DB96242 /* Pods_DartCounterSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34B89543FDA4C3D4349A5531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE399DD67C5BE2C9F511D1 /* Pods_DartCounterSwiftUI.framework */,
+				6BF6DB626520B8D349B71CEA /* Pods_DartCounterSwiftUITests.framework */,
+				C0238D3C38E4172230AFF48A /* Pods_DartCounterSwiftUI_DartCounterSwiftUIUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBDB4148318CED019C919DE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75414BE513A0A10DEFDBB728 /* Pods-DartCounterSwiftUI.debug.xcconfig */,
+				F303D2F61552D06171BF8833 /* Pods-DartCounterSwiftUI.release.xcconfig */,
+				CB70702835E09AB5591B11DE /* Pods-DartCounterSwiftUITests.debug.xcconfig */,
+				801437044060BB87AB2E37E4 /* Pods-DartCounterSwiftUITests.release.xcconfig */,
+				57B9B227789FCD4181D9ABA3 /* Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.debug.xcconfig */,
+				71B16313F117BF025A7C60B5 /* Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD0837A725C8A98E00903EA6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4E6A325BDD8F000B6D0B4 /* DartCounterSwiftUIApp.swift */,
+				DD189AA025CC716C0057DE39 /* AppState.swift */,
+				DD50240F25CDD5CA0037A452 /* LoadingView.swift */,
+				DD64A78425BDF9FF00FAFC28 /* SignInView.swift */,
+				DD64A78725BDFA3E00FAFC28 /* SignUpView.swift */,
+				DDB98AB025BDFE3900D9EF1C /* HomeView.swift */,
+				DD1D68DB25C0DDC0001A4197 /* CreateGameView.swift */,
+				DD1D68DE25C0DE27001A4197 /* InGameView.swift */,
+				DD1D68E125C0DE50001A4197 /* CheckoutDetailsView.swift */,
+				DD1D68E425C0DE61001A4197 /* StatsView.swift */,
+				DD1D68E725C0DE77001A4197 /* ProfileView.swift */,
+				DD4EA6A125BF2D9300A44D72 /* Last10GamesView.swift */,
+				DD1D68EA25C0DEAA001A4197 /* InvitesView.swift */,
+				DD1D68ED25C0DEC5001A4197 /* FriendsView.swift */,
+				DD1D68F025C0DEDB001A4197 /* SettingsView.swift */,
+				DD1D68F325C0DEEF001A4197 /* AboutUsView.swift */,
+				DD1D68F625C0DF05001A4197 /* SocialMediaView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DD0837A825C8AA1900903EA6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD0837AA25C8AB4E00903EA6 /* Language.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DD093E5C25D8783300D6E768 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD29533325D7268A0041C6F9 /* XCTestCase+Firebase.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD093E6325D8785600D6E768 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DDE3083625D1A16100195F54 /* TestData.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DD30BE0925C9BCFB00D15A18 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DD64A78A25BDFA4300FAFC28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4E6C725BDE5B900B6D0B4 /* AppTextField.swift */,
+				DDE01D8C25CAC4EA00AEC424 /* AppSecureField.swift */,
+				DDF4E6CA25BDE6B300B6D0B4 /* AppPrimaryButton.swift */,
+				DDB98AB725BDFEE200D9EF1C /* AppCard.swift */,
+				DD26F02825C168C600E830DF /* AppActionButton.swift */,
+				DDF4E6CD25BDE6F900B6D0B4 /* SocialMediaButton.swift */,
+				DDE002EA25BF56BC00F21FD7 /* HomeButton.swift */,
+				DD26F02B25C16B4C00E830DF /* OnePlayer.swift */,
+				DD26F03225C1772300E830DF /* TwoPlayer.swift */,
+				DD26F03525C1772800E830DF /* ThreePlayer.swift */,
+				DD26F03825C1772E00E830DF /* FourPlayer.swift */,
+				DD3C835925C18CB300845DEA /* IngameActionButton.swift */,
+				DD1D68F925C0DF41001A4197 /* KeyBoard.swift */,
+				DD26F02E25C1721900E830DF /* KeyBoardButton.swift */,
+				DD89454425C197D900E13AC8 /* CheckoutDetailsButton.swift */,
+				DDAB77CA25C1E231003B73AA /* ProfileCard.swift */,
+				DD4EA6AA25BF442900A44D72 /* Last10GamesCard.swift */,
+				DD50241225CDD5FF0037A452 /* LottieView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD858F1425CF2632001D9776 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD858F1525CF2670001D9776 /* FireStore.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DD858F1D25CF28FD001D9776 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DD8B9C6A25C9DA16005D2B29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDD8454F25CF32D6002F01F3 /* LoadingViewModel.swift */,
+				DD574E3825CA0FD6004A85AF /* SignInViewModel.swift */,
+				DD574E3B25CA0FE2004A85AF /* SignUpViewModel.swift */,
+				DDD8451525CF31A5002F01F3 /* HomeViewModel.swift */,
+				DDD8451A25CF31D8002F01F3 /* CreateGameViewModel.swift */,
+				DDD8451F25CF31F5002F01F3 /* InGameViewModel.swift */,
+				DDD8452425CF320D002F01F3 /* CheckoutDetailsViewModel.swift */,
+				DDD8452925CF3220002F01F3 /* StatsViewModel.swift */,
+				DD858F1A25CF28A3001D9776 /* ProfileViewModel.swift */,
+				DDD8452E25CF3241002F01F3 /* Last10GameViewModel.swift */,
+				DDD8453625CF3253002F01F3 /* InvitesViewModel.swift */,
+				DDD8453B25CF3266002F01F3 /* FriendsViewModel.swift */,
+				DDD8454025CF327A002F01F3 /* SettingsViewModel.swift */,
+				DDD8454525CF328D002F01F3 /* AboutUsViewModel.swift */,
+				DDD8454A25CF32A8002F01F3 /* SocialMediaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDAB77C625C1CC40003B73AA /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				DDBA505425CDDDAE0050BC55 /* loading.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		DDD844F925CF2E48002F01F3 /* DartCounterSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD093E6325D8785600D6E768 /* Helper */,
+				DD093E5C25D8783300D6E768 /* Extension */,
+				DDD844FA25CF2E48002F01F3 /* DartCounterSwiftUITests.swift */,
+				DDD8456225CF4718002F01F3 /* FireStoreTest.swift */,
+				DDD844FC25CF2E48002F01F3 /* Info.plist */,
+			);
+			path = DartCounterSwiftUITests;
+			sourceTree = "<group>";
+		};
+		DDD8450925CF2F2E002F01F3 /* DartCounterSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD8450A25CF2F2E002F01F3 /* DartCounterSwiftUIUITests.swift */,
+				DDD8450C25CF2F2E002F01F3 /* Info.plist */,
+			);
+			path = DartCounterSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		DDE002E025BF478600F21FD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F290C25CB2FEC0004334E /* User.swift */,
+				DD50240325CDCFC20037A452 /* Settings.swift */,
+				DD3F290F25CB3FBC0004334E /* CareerStats.swift */,
+				DD3F291225CB405D0004334E /* Invitation.swift */,
+				DD50240625CDCFC90037A452 /* Game.swift */,
+				DDD8455725CF3A1D002F01F3 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDE002E225BF4AB300F21FD7 /* Artifact */ = {
+			isa = PBXGroup;
+			children = (
+				DDE002E325BF4AD700F21FD7 /* GameSnapshot.swift */,
+				DDE002E725BF507400F21FD7 /* CareerStatsSnapshot.swift */,
+			);
+			path = Artifact;
+			sourceTree = "<group>";
+		};
+		DDF4E69725BDD8F000B6D0B4 = {
+			isa = PBXGroup;
+			children = (
+				DDF4E6A225BDD8F000B6D0B4 /* DartCounterSwiftUI */,
+				DDD844F925CF2E48002F01F3 /* DartCounterSwiftUITests */,
+				DDD8450925CF2F2E002F01F3 /* DartCounterSwiftUIUITests */,
+				DDF4E6A125BDD8F000B6D0B4 /* Products */,
+				DBDB4148318CED019C919DE1 /* Pods */,
+				34B89543FDA4C3D4349A5531 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDF4E6A125BDD8F000B6D0B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4E6A025BDD8F000B6D0B4 /* DartCounterSwiftUI.app */,
+				DDD844F825CF2E48002F01F3 /* DartCounterSwiftUITests.xctest */,
+				DDD8450825CF2F2E002F01F3 /* DartCounterSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF4E6A225BDD8F000B6D0B4 /* DartCounterSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				DD858F1D25CF28FD001D9776 /* Cache */,
+				DD858F1425CF2632001D9776 /* Networking */,
+				DD0837A725C8A98E00903EA6 /* App */,
+				DDE002E025BF478600F21FD7 /* Model */,
+				DD8B9C6A25C9DA16005D2B29 /* ViewModel */,
+				DD64A78A25BDFA4300FAFC28 /* View */,
+				DD0837A825C8AA1900903EA6 /* Data */,
+				DDF4E6B625BDE16D00B6D0B4 /* Extension */,
+				DD30BE0925C9BCFB00D15A18 /* Helper */,
+				DDE002E225BF4AB300F21FD7 /* Artifact */,
+				DDAB77C625C1CC40003B73AA /* Animation */,
+				DDF4E6AC25BDD8F200B6D0B4 /* Info.plist */,
+				DD8B9C6B25C9DC77005D2B29 /* GoogleService-Info.plist */,
+				DD68BCF025C8927200EFC801 /* LaunchScreen.storyboard */,
+				DDF4E6A725BDD8F200B6D0B4 /* Assets.xcassets */,
+				DDF4E6A925BDD8F200B6D0B4 /* Preview Content */,
+			);
+			path = DartCounterSwiftUI;
+			sourceTree = "<group>";
+		};
+		DDF4E6A925BDD8F200B6D0B4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4E6AA25BDD8F200B6D0B4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDF4E6B625BDE16D00B6D0B4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4E6B325BDE14E00B6D0B4 /* Color+Extension.swift */,
+				DDAF474925BF25A100E25831 /* View+Extension.swift */,
+				DD43C0EF25D1E30300AC0A7B /* Encodable+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD844F725CF2E48002F01F3 /* DartCounterSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD8450125CF2E48002F01F3 /* Build configuration list for PBXNativeTarget "DartCounterSwiftUITests" */;
+			buildPhases = (
+				F7ACE9C72398452022296835 /* [CP] Check Pods Manifest.lock */,
+				DDD844F425CF2E48002F01F3 /* Sources */,
+				DDD844F525CF2E48002F01F3 /* Frameworks */,
+				DDD844F625CF2E48002F01F3 /* Resources */,
+				5B60CC52A22CE2D4A475F690 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD844FE25CF2E48002F01F3 /* PBXTargetDependency */,
+			);
+			name = DartCounterSwiftUITests;
+			productName = DartCounterSwiftUITests;
+			productReference = DDD844F825CF2E48002F01F3 /* DartCounterSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDD8450725CF2F2E002F01F3 /* DartCounterSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD8450F25CF2F2E002F01F3 /* Build configuration list for PBXNativeTarget "DartCounterSwiftUIUITests" */;
+			buildPhases = (
+				3C4790D94138137F46408217 /* [CP] Check Pods Manifest.lock */,
+				DDD8450425CF2F2E002F01F3 /* Sources */,
+				DDD8450525CF2F2E002F01F3 /* Frameworks */,
+				DDD8450625CF2F2E002F01F3 /* Resources */,
+				74B2A6EB5D807E32EED3B38D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD8450E25CF2F2E002F01F3 /* PBXTargetDependency */,
+			);
+			name = DartCounterSwiftUIUITests;
+			productName = DartCounterSwiftUIUITests;
+			productReference = DDD8450825CF2F2E002F01F3 /* DartCounterSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DDF4E69F25BDD8F000B6D0B4 /* DartCounterSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF4E6AF25BDD8F200B6D0B4 /* Build configuration list for PBXNativeTarget "DartCounterSwiftUI" */;
+			buildPhases = (
+				B11E1B0DF302EC210FA49C73 /* [CP] Check Pods Manifest.lock */,
+				DDF4E69C25BDD8F000B6D0B4 /* Sources */,
+				DDF4E69D25BDD8F000B6D0B4 /* Frameworks */,
+				DDF4E69E25BDD8F000B6D0B4 /* Resources */,
+				9274835512549D1A82DA2FE4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DartCounterSwiftUI;
+			productName = DartCounterSwiftUI;
+			productReference = DDF4E6A025BDD8F000B6D0B4 /* DartCounterSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDF4E69825BDD8F000B6D0B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DDD844F725CF2E48002F01F3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DDF4E69F25BDD8F000B6D0B4;
+					};
+					DDD8450725CF2F2E002F01F3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DDF4E69F25BDD8F000B6D0B4;
+					};
+					DDF4E69F25BDD8F000B6D0B4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = DDF4E69B25BDD8F000B6D0B4 /* Build configuration list for PBXProject "DartCounterSwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDF4E69725BDD8F000B6D0B4;
+			productRefGroup = DDF4E6A125BDD8F000B6D0B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDF4E69F25BDD8F000B6D0B4 /* DartCounterSwiftUI */,
+				DDD844F725CF2E48002F01F3 /* DartCounterSwiftUITests */,
+				DDD8450725CF2F2E002F01F3 /* DartCounterSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD844F625CF2E48002F01F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD8450625CF2F2E002F01F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF4E69E25BDD8F000B6D0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF4E6AB25BDD8F200B6D0B4 /* Preview Assets.xcassets in Resources */,
+				DD68BCF125C8927200EFC801 /* LaunchScreen.storyboard in Resources */,
+				DD8B9C6C25C9DC77005D2B29 /* GoogleService-Info.plist in Resources */,
+				DDBA505525CDDDAE0050BC55 /* loading.json in Resources */,
+				DDF4E6A825BDD8F200B6D0B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C4790D94138137F46408217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B60CC52A22CE2D4A475F690 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUITests/Pods-DartCounterSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUITests/Pods-DartCounterSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUITests/Pods-DartCounterSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B2A6EB5D807E32EED3B38D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests/Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9274835512549D1A82DA2FE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUI/Pods-DartCounterSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUI/Pods-DartCounterSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DartCounterSwiftUI/Pods-DartCounterSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11E1B0DF302EC210FA49C73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DartCounterSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7ACE9C72398452022296835 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DartCounterSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD844F425CF2E48002F01F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE3083725D1A16100195F54 /* TestData.swift in Sources */,
+				DDD844FB25CF2E48002F01F3 /* DartCounterSwiftUITests.swift in Sources */,
+				DDD8456325CF4718002F01F3 /* FireStoreTest.swift in Sources */,
+				DD29533425D7268A0041C6F9 /* XCTestCase+Firebase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD8450425CF2F2E002F01F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD8450B25CF2F2E002F01F3 /* DartCounterSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF4E69C25BDD8F000B6D0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE002EB25BF56BC00F21FD7 /* HomeButton.swift in Sources */,
+				DD50240725CDCFC90037A452 /* Game.swift in Sources */,
+				DD574E3C25CA0FE2004A85AF /* SignUpViewModel.swift in Sources */,
+				DDD8451625CF31A5002F01F3 /* HomeViewModel.swift in Sources */,
+				DDAF474A25BF25A100E25831 /* View+Extension.swift in Sources */,
+				DDD8452025CF31F5002F01F3 /* InGameViewModel.swift in Sources */,
+				DD64A78525BDF9FF00FAFC28 /* SignInView.swift in Sources */,
+				DD3F291025CB3FBC0004334E /* CareerStats.swift in Sources */,
+				DD4EA6A225BF2D9300A44D72 /* Last10GamesView.swift in Sources */,
+				DDD8455825CF3A1D002F01F3 /* Profile.swift in Sources */,
+				DD0837AB25C8AB4E00903EA6 /* Language.swift in Sources */,
+				DD1D68E525C0DE61001A4197 /* StatsView.swift in Sources */,
+				DD26F03925C1772E00E830DF /* FourPlayer.swift in Sources */,
+				DD50241325CDD5FF0037A452 /* LottieView.swift in Sources */,
+				DDB98AB825BDFEE200D9EF1C /* AppCard.swift in Sources */,
+				DDD8453C25CF3266002F01F3 /* FriendsViewModel.swift in Sources */,
+				DDD8452F25CF3241002F01F3 /* Last10GameViewModel.swift in Sources */,
+				DD1D68DF25C0DE27001A4197 /* InGameView.swift in Sources */,
+				DDE01D8D25CAC4EA00AEC424 /* AppSecureField.swift in Sources */,
+				DDF4E6A425BDD8F000B6D0B4 /* DartCounterSwiftUIApp.swift in Sources */,
+				DD3F291325CB405D0004334E /* Invitation.swift in Sources */,
+				DDB98AB125BDFE3900D9EF1C /* HomeView.swift in Sources */,
+				DDF4E6B425BDE14E00B6D0B4 /* Color+Extension.swift in Sources */,
+				DD26F02F25C1721900E830DF /* KeyBoardButton.swift in Sources */,
+				DDD8452525CF320D002F01F3 /* CheckoutDetailsViewModel.swift in Sources */,
+				DDD8453725CF3253002F01F3 /* InvitesViewModel.swift in Sources */,
+				DDE002E825BF507400F21FD7 /* CareerStatsSnapshot.swift in Sources */,
+				DD26F02C25C16B4C00E830DF /* OnePlayer.swift in Sources */,
+				DD3F290D25CB2FEC0004334E /* User.swift in Sources */,
+				DD64A78825BDFA3E00FAFC28 /* SignUpView.swift in Sources */,
+				DDAB77CB25C1E231003B73AA /* ProfileCard.swift in Sources */,
+				DD1D68EB25C0DEAA001A4197 /* InvitesView.swift in Sources */,
+				DDD8451B25CF31D8002F01F3 /* CreateGameViewModel.swift in Sources */,
+				DDD8454B25CF32A8002F01F3 /* SocialMediaViewModel.swift in Sources */,
+				DDD8454625CF328D002F01F3 /* AboutUsViewModel.swift in Sources */,
+				DD26F03325C1772300E830DF /* TwoPlayer.swift in Sources */,
+				DD1D68F725C0DF05001A4197 /* SocialMediaView.swift in Sources */,
+				DD1D68F125C0DEDB001A4197 /* SettingsView.swift in Sources */,
+				DD574E3925CA0FD6004A85AF /* SignInViewModel.swift in Sources */,
+				DD858F1625CF2670001D9776 /* FireStore.swift in Sources */,
+				DD1D68DC25C0DDC0001A4197 /* CreateGameView.swift in Sources */,
+				DD89454525C197D900E13AC8 /* CheckoutDetailsButton.swift in Sources */,
+				DD26F02925C168C600E830DF /* AppActionButton.swift in Sources */,
+				DD4EA6AB25BF442900A44D72 /* Last10GamesCard.swift in Sources */,
+				DD1D68E225C0DE50001A4197 /* CheckoutDetailsView.swift in Sources */,
+				DD3C835A25C18CB300845DEA /* IngameActionButton.swift in Sources */,
+				DDD8452A25CF3220002F01F3 /* StatsViewModel.swift in Sources */,
+				DD26F03625C1772800E830DF /* ThreePlayer.swift in Sources */,
+				DDD8454125CF327A002F01F3 /* SettingsViewModel.swift in Sources */,
+				DD1D68EE25C0DEC5001A4197 /* FriendsView.swift in Sources */,
+				DDF4E6CB25BDE6B300B6D0B4 /* AppPrimaryButton.swift in Sources */,
+				DDD8455025CF32D6002F01F3 /* LoadingViewModel.swift in Sources */,
+				DDF4E6CE25BDE6F900B6D0B4 /* SocialMediaButton.swift in Sources */,
+				DDE002E425BF4AD700F21FD7 /* GameSnapshot.swift in Sources */,
+				DD858F1B25CF28A3001D9776 /* ProfileViewModel.swift in Sources */,
+				DD189AA125CC716C0057DE39 /* AppState.swift in Sources */,
+				DD1D68E825C0DE77001A4197 /* ProfileView.swift in Sources */,
+				DD1D68F425C0DEEF001A4197 /* AboutUsView.swift in Sources */,
+				DD1D68FA25C0DF41001A4197 /* KeyBoard.swift in Sources */,
+				DD43C0F025D1E30300AC0A7B /* Encodable+Extension.swift in Sources */,
+				DD50240425CDCFC20037A452 /* Settings.swift in Sources */,
+				DDF4E6C825BDE5B900B6D0B4 /* AppTextField.swift in Sources */,
+				DD50241025CDD5CA0037A452 /* LoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDD844FE25CF2E48002F01F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF4E69F25BDD8F000B6D0B4 /* DartCounterSwiftUI */;
+			targetProxy = DDD844FD25CF2E48002F01F3 /* PBXContainerItemProxy */;
+		};
+		DDD8450E25CF2F2E002F01F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF4E69F25BDD8F000B6D0B4 /* DartCounterSwiftUI */;
+			targetProxy = DDD8450D25CF2F2E002F01F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDD844FF25CF2E48002F01F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB70702835E09AB5591B11DE /* Pods-DartCounterSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RA653K74L8;
+				INFOPLIST_FILE = DartCounterSwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtdLab.DartCounterSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DartCounterSwiftUI.app/DartCounterSwiftUI";
+			};
+			name = Debug;
+		};
+		DDD8450025CF2E48002F01F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801437044060BB87AB2E37E4 /* Pods-DartCounterSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RA653K74L8;
+				INFOPLIST_FILE = DartCounterSwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtdLab.DartCounterSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DartCounterSwiftUI.app/DartCounterSwiftUI";
+			};
+			name = Release;
+		};
+		DDD8451025CF2F2E002F01F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B9B227789FCD4181D9ABA3 /* Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RA653K74L8;
+				INFOPLIST_FILE = DartCounterSwiftUIUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtdLab.DartCounterSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DartCounterSwiftUI;
+			};
+			name = Debug;
+		};
+		DDD8451125CF2F2E002F01F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B16313F117BF025A7C60B5 /* Pods-DartCounterSwiftUI-DartCounterSwiftUIUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RA653K74L8;
+				INFOPLIST_FILE = DartCounterSwiftUIUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtdLab.DartCounterSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DartCounterSwiftUI;
+			};
+			name = Release;
+		};
+		DDF4E6AD25BDD8F200B6D0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDF4E6AE25BDD8F200B6D0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDF4E6B025BDD8F200B6D0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75414BE513A0A10DEFDBB728 /* Pods-DartCounterSwiftUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DartCounterSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = RA653K74L8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DartCounterSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtdLab.DartCounterSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDF4E6B125BDD8F200B6D0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F303D2F61552D06171BF8833 /* Pods-DartCounterSwiftUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DartCounterSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = RA653K74L8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DartCounterSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtdLab.DartCounterSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD8450125CF2E48002F01F3 /* Build configuration list for PBXNativeTarget "DartCounterSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD844FF25CF2E48002F01F3 /* Debug */,
+				DDD8450025CF2E48002F01F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD8450F25CF2F2E002F01F3 /* Build configuration list for PBXNativeTarget "DartCounterSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD8451025CF2F2E002F01F3 /* Debug */,
+				DDD8451125CF2F2E002F01F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF4E69B25BDD8F000B6D0B4 /* Build configuration list for PBXProject "DartCounterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF4E6AD25BDD8F200B6D0B4 /* Debug */,
+				DDF4E6AE25BDD8F200B6D0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF4E6AF25BDD8F200B6D0B4 /* Build configuration list for PBXNativeTarget "DartCounterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF4E6B025BDD8F200B6D0B4 /* Debug */,
+				DDF4E6B125BDD8F200B6D0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDF4E69825BDD8F000B6D0B4 /* Project object */;
+}

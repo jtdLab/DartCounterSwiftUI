@@ -1,0 +1,6 @@
+framework module Pods_DartCounterSwiftUI {
+  umbrella header "Pods-DartCounterSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GV4-RZ-uDZ">
+            <objects>
+                <viewController id="XAO-4q-EKQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r2P-j9-vQq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-zg-JKP">
+                                <rect key="frame" x="81.5" y="322.5" width="251" height="251"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adBanner" translatesAutoresizingMaskIntoConstraints="NO" id="g8s-j3-wi3">
+                                <rect key="frame" x="110" y="742" width="194" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uca-xJ-SVJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uca-xJ-SVJ" firstAttribute="trailing" secondItem="g8s-j3-wi3" secondAttribute="trailing" constant="110" id="3AD-og-wZ7"/>
+                            <constraint firstItem="2JL-zg-JKP" firstAttribute="centerX" secondItem="r2P-j9-vQq" secondAttribute="centerX" id="5mH-Yj-58B"/>
+                            <constraint firstItem="2JL-zg-JKP" firstAttribute="centerY" secondItem="r2P-j9-vQq" secondAttribute="centerY" id="6mg-4u-nED"/>
+                            <constraint firstItem="g8s-j3-wi3" firstAttribute="leading" secondItem="Uca-xJ-SVJ" secondAttribute="leading" constant="110" id="JID-Xu-1ts"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="g8s-j3-wi3" secondAttribute="bottom" constant="40" id="Zg7-1s-ZUr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzN-OX-A0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adBanner" width="156" height="80"/>
+        <image name="logo" width="251" height="251"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
